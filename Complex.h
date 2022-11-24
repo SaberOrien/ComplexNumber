@@ -23,11 +23,11 @@ class Complex {
 	Complex& operator-=(const Complex&);
 	Complex& operator*=(const Complex&);
 	Complex& operator/=(const Complex&);
-	friend Complex operator+(Complex a, Complex b);
-	friend Complex operator-(Complex a, Complex b);
-	friend Complex operator*(Complex a, Complex b);
-	friend Complex operator/(Complex a, Complex b);
 	friend bool operator==(Complex a, Complex b);
 	friend bool operator!=(Complex a, Complex b);
 	friend std::ostream& operator<<(std::ostream& s, const Complex& num);
 };
+Complex operator+(Complex a, Complex b);
+Complex operator-(Complex a, Complex b);
+Complex operator*(Complex a, Complex b);
+Complex operator/(Complex a, Complex b);
